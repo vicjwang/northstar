@@ -9,9 +9,8 @@ chrome.runtime.onInstalled.addListene3r(function() {
     chrome.declarativeContent.onPageChanged.addRules([{
       conditions: [new chrome.declarativeContent.PageStageMatcher({
         pageUrl: {hostEquals: 'developer.chrome.com'},
-      })
-      ],
+      })],
         actions: [new chrome.declarativeContent.ShowPageAction()]
     }]),
+  });
 });
-
